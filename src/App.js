@@ -1,7 +1,12 @@
+import { useSelector } from "react-redux"
+import {increment, decrement, selectCount} from './counterSlice'
+
 
 function App() {
+  const count = useSelector(selectCount)
   return (
-    <h1>hello</h1>
+    <h1>{count}</h1>
+
   )
 }
 
